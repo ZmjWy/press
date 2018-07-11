@@ -1,0 +1,841 @@
+	<!DOCTYPE html>
+	<!-- saved from url=(0042)https://f-wltask.rili.cn/inviteFriend.html -->
+	<html style="font-size: 58.2827px;">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>‎</title>
+	<link rel="stylesheet" href="css/font.css">
+
+	<link rel="stylesheet" href="css/vendor.css">
+
+	<link rel="stylesheet" href="css/inviteFriend.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="js/hm.js"></script>
+	<script src="js/clipboard.js" type="text/javascript"></script>
+	<style type="text/css">
+
+
+	.src-components-inviteFriend-ShareList__ShareList--3_9wBb {
+	  list-style: none;
+	  margin-bottom: 0;
+	  padding: 0;
+	}
+
+	.src-components-inviteFriend-ShareList__ShareList--3_9wBb:after {
+	  content: '';
+	  display: block;
+	  clear: both;
+	}
+	.src-components-inviteFriend-ShareList__ShareList--3_9wBb li {
+	  width: 50%;
+	  text-align: center;
+	  float: left;
+	}
+	.src-components-inviteFriend-ShareList__ShareList--3_9wBb li img {
+	  width: 50.24px;
+	}
+	.src-components-inviteFriend-ShareList__ShareList--3_9wBb li p {
+	  color: #999999;
+	  font-size: 13.2px;
+	}
+	.src-components-inviteFriend-ShareList__ShareList--3_9wBb li .am-badge-text {
+	  position: absolute;
+	  -webkit-transform: none;
+	          transform: none;
+	  background-color: #FF4141;
+	  border-radius: 4px;
+	}
+
+	.src-components-HowToInvite-HowToInvite__HowToInvite--1I8a9F {
+	    height: auto;
+	}
+
+	.close {
+	    /* still bad on picking color */
+	    /* make a round button */
+	    border-radius: 12px;
+	    /* center text */
+	    line-height: 20px;
+	    text-align: center;
+	    height: 20px;
+	    width: 20px;
+	    font-size: 18px;
+	    padding: 1px;
+	}
+	/* use cross as close button */
+	.close::before {
+	    content: "\2716";
+	}
+	/* place the button on top-right */
+	.close {
+	    top: 3px;
+	    right: 3px;
+	    position: absolute;
+	}
+	.leftclose {
+	    /* still bad on picking color */
+	    /* make a round button */
+	    border-radius: 12px;
+	    /* center text */
+	    line-height: 20px;
+	    height: 20px;
+	    width: 20px;
+	    font-size: 18px;
+	    padding: 1px;
+	     background-image: url("imgs/baa.png");
+	}
+	.leftclose {
+	    top: 3px;
+	    left: 3px;
+	    position: absolute;
+	   
+	}
+	.box-sizing{
+		-webkit-box-sizing: border-box;
+    	box-sizing: border-box; 
+	}
+	.clearfix:after,.clearfix:before{
+		content: "";
+		display: block;
+		clear: both;
+		zoom:0;
+	}
+	.invitation-code{
+		width: 100%;
+		background: #fff;
+		padding: 15px 16px 0;
+	}
+	.nvitation-code-content{
+		width: 100%;
+		height: 78px;
+		border-top: 1px solid #e1e1e1;
+		border-bottom: 1px solid #e1e1e1;
+		padding:0 10px 10px 12px;
+		overflow: hidden;
+	}
+	.code-info{
+		font-size: 12px;
+		width: 68px;
+		height: 16px;
+		line-height: 16px;
+		text-align: center;
+		color:#fff;
+		background-color: #ff4c4c;
+		position: relative;
+		margin-top: 15px;
+	}
+	.code-info:before{
+		position: absolute;
+	    content: "";
+	    width: 0;
+	    left: 0;
+		top: 16px;
+		border-bottom: 3px solid transparent;
+		border-left: 4px solid #ff4c4c;
+	}
+	.copyBtn{
+		width: 8rem;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 30px;
+		background-color: #ff4c4c;
+		text-align: center;
+		font-size: 16px;
+		color:#fff; 
+		float: right;
+	}
+	.invitation-info{
+		text-align: right;
+		padding: 7px 20px 7px 0;s
+	}
+	.invitation-info>img{
+		vertical-align: middle;
+	    height: 14px;
+	    width: 14px;
+	}
+	.invitation-info>span{
+		font-size: 12px;
+    	color: #6a6a6a;
+	}
+	.invitation-modal{
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(94, 94, 94, 0.45);
+		position: fixed;
+		z-index: 999;
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+	.invitation-modal-content{
+		width: 18.125rem;
+		background-color: #fff;
+		border-radius: 4px;
+	}
+	.modal-tittle{
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		background-color: #1e85f7;
+		color:#fff;
+		border-radius: 4px 4px 0 0;
+	}
+	.modal-tittle>h6{
+		margin: 0;
+		font-size: 1.5rem;
+	}
+	.modal-content{
+		overflow: hidden;
+	}
+	.modal-content>p{
+		font-size: 1.125rem;
+		text-align: center;
+		margin: 20px 0 12px;
+	}
+	.modal-content .img-info{
+		width: 15rem;
+		display: block;
+		margin: 16px auto 24px;
+		padding: 18px 0 24px 1.67rem;
+		box-shadow: 1px 4px 16px #cbd9fe;
+	}
+	.modal-info{
+		padding-left: 18px;
+	}
+	.modal-info>span{
+		display: inline-block;
+		float: left;
+	}
+	.modal-info>span:nth-child(1){
+		width: 4px;
+		height: 4px;
+		border-radius: 4px;
+		background-color: #1e89f7;
+		margin-right: 8px;
+		margin-top: 10px;
+	}
+	.modal-info>span:nth-child(2){
+		width: 14rem;
+		font-size: 0.875rem;
+		color:#7e7d7d;
+		line-height: 1.3125rem;
+	}
+	.modal-btn{
+		font-size: 1rem;
+		color:#fff;
+		width: 13.125rem;
+		height: 40px;
+		text-align: center;
+		border-radius: 40px;
+		line-height: 38px;
+		background-color: #1e89f7;
+		display: block;
+		outline: none;
+		margin: 24px auto 0;
+		border:none;
+	}
+	.modal-btn-back{
+		width: 13.125rem;
+		margin: 0 auto;
+		display: block;
+		height: 30px;
+	}
+	.modal-copy{
+		float: left;
+		border: 1px solid #6c6c6c;
+		color: #6c6c6c;
+		width: 38px;
+		height: 16px;
+		line-height: 16px;
+		text-align: center;
+		font-size: 0.875rem;
+		border-radius: 16px;
+		margin-top: 1px;
+		margin-left: 6px;
+	}
+	.modal-code-info{
+		margin-top: 0;
+		float: left;
+		height: 20px;
+		width: 5.6rem;
+		font-size: 1rem;
+		line-height: 20px;
+		border-radius: 4px 4px 4px 0;
+	}
+	.modal-code-info:before{
+		top: 20px;
+	}
+	.modal-show-copy{
+		font-size: 5rem;
+	    height: 34px;
+	    line-height: 1;
+	}
+	.copy-success{
+		position: fixed;
+	    display: none;
+	    justify-content: center;
+	    align-items: center;
+	    width: 100%;
+	    height: 100vh;
+	    z-index: 1000;
+	}
+	.copy-success>p{
+		z-index: 10;
+	    font-size: 14px;
+	    line-height: 40px;
+	    text-align: center;
+	    background-color: rgba(84, 82, 82, 0.81);
+	    height: 40px;
+	    border-radius: 4px;
+	    color: #fff;
+	    width:12.5rem;
+	}
+	</style>
+	<script>
+		function setRootFontSize() {
+			document.getElementsByTagName('html')[0].style.fontSize = window.innerWidth
+					/ 23.4375 + 'px';
+		}
+		document.title = '\u200E'
+		setRootFontSize();
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement('script');
+			hm.src = 'https://hm.baidu.com/hm.js?34e517922e926b352ba7b131c6d3ae33';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+		
+		$(document).ready(function(){
+			 (function ($) {
+			   $.getUrlParam = function (name) {
+			    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			    var r = window.location.search.substr(1).match(reg);
+			    if (r != null) return unescape(r[2]); return null;
+			   }
+			  })(jQuery);
+				 
+			 var uid = $.getUrlParam('uid');
+			 var type = $.getUrlParam('type');
+			 if(type==2){
+				 $('#tab2').show()		 
+				 $('#tab1').hide()	
+				 $("#linestyle").css("left","50%");
+			 }else{
+				 $('#tab2').hide()
+			 }
+			 
+			 $("#div1").hide();
+			 //$("#div2").hide();
+			 $("#div3").hide();
+			 //$("#tixingtankuang").hide();
+			 $("#am-modal-container-1528940666659").hide();
+			 
+			 function createHtml(info){
+				 var html = "";
+				 html +="<tr><td style='text-align:left' >"+info.mobile.substring(0, 3) + "****" +info.mobile.substring(7, 11)+"</td><td>"+info.todaymoney+"</td><td>"+info.totolmoney+"</td><th><div style='width: 100px;height: 30px' ><a href = 'javascript:void(0)' onclick = 'tixing()'><img style='width: 60px;height: 30px;margin-left: 10px' alt='' src='./imgs/tixing.png'></a></div></th></tr>"
+				 return html;
+			 }
+			 
+			 function createHtml2(info){
+				 var html = "";
+				 html +="<tr><td style='text-align:left' >"+info.name+"</td><td>最高可得10元</td><td>"+info.mobile+"</td></tr>"
+				 return html;
+			 }
+			 
+			 $.ajax({
+					type : 'post',
+					url : '../index/allfriend?uid=' + uid,
+					cache : false,
+					dataType : 'json',
+					success : function(data) {
+						if(data.status==100){
+							var infolist = data.invitation;
+							if(infolist.length>0){
+								var html = "<h1>已邀请<font color=red>"+infolist.length+"</font>位好友，累计贡献<font color=red>"+data.total+"</font>金币</h1><table><thead><tr><th align='left'>昵称</th><th>今日贡献</th><th>累计贡献</th><th>操作</th></tr><tbody>";
+								for (var i = 0; i < infolist.length; i++) {
+									html += createHtml(infolist[i]);
+								}
+								html +="</tbody></thead></table>";
+								$("#div1").append(html);
+								$("#div1").show();
+							}
+							 
+							
+
+						}
+
+					},
+					error : function() {
+						alert("请求失败")
+					}
+				})
+			 
+			 
+			 $('#myfriend') .on( 'click',
+				function() {
+				 $('#tab2').show()		 
+				 $('#tab1').hide()	
+				 $("#linestyle").css("left","50%");
+			})
+			
+			$('#reawrd') .on( 'click',
+				function() {
+				 $('#tab1').show()		 
+				 $('#tab2').hide()	
+				  $("#linestyle").css("left","0%");
+				 //
+			})
+			$('.tixingtankuang') .on( 'click',
+				function() {
+				 $("#am-modal-container-1528940666659").show();
+			})
+			$('.guanbitixing') .on( 'click',
+				function() {
+				$("#tixingtankuang").hide();
+			})
+			
+			
+			$(".am-tabs-pane-wrap am-tabs-pane-wrap-inactive yaoqing").bind("click",function(){  
+				 $("#am-modal-container-1528940666659").show();
+			});  
+			
+		});
+	</script>
+	<link rel="stylesheet" href="css/invate.css">
+	</head>
+	<body>
+		<!-- 复制成功提示 -->
+		<div class="copy-success">
+			<p>
+				邀请码已复制至剪贴板
+			</p>
+		</div>
+		<!-- 邀请说明modal -->
+		<div class="invitation-modal">
+			<div class="invitation-modal-content">
+				<div class="modal-tittle">
+					<h6>邀请码说明</h6>
+				</div>
+				<div class="modal-content">
+					<p>邀请码是什么?</p>
+					<div class="modal-info clearfix">
+						<span></span>
+						<span>邀请码是您在花生头条的标识<br/>可用于邀请好友</span>
+					</div>
+					<div class="img-info box-sizing">
+						<div class="clearfix">
+							<div class="code-info modal-code-info">
+								我的邀请码
+							</div>
+							<div class="copy-btn modal-copy" data-clipboard-text="688 88A">复制</div>
+						</div>
+						<p class="modal-show-copy">*** ***</p>
+					</div>
+					<p style="margin: 10px 0 12px;">邀请码怎么用?</p>
+					<div class="modal-info clearfix">
+						<span></span>
+						<span>分享邀请码给好友，好友安装并登录花生头条后，可在新手任务中输入你的邀请码，完成邀请！</span>
+					</div>
+					<input class="modal-btn" type="button" value="点击后关闭弹窗">
+					<img class="modal-btn-back" src="imgs/modal-btn_07.png" alt="">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="root">
+			<div class="src-pages-inviteFriend__inviteFriend--1dRiBy">
+				<div
+					class="src-components-inviteFriend-TopNoteBar__TopNoteBar--28TgxW src-pages-inviteFriend__marqueeMessage--2Im1SY src-components-inviteFriend-TopNoteBar__empty--2gEgHq">
+					<div class="slider am-carousel"
+						style="position: relative; display: block; width: 100%; height: auto; box-sizing: border-box; visibility: visible;">
+						<div class="slider-frame"
+							style="position: relative; display: block; overflow: hidden; height: auto; margin: 0px; padding: 0px; transform: translate3d(0px, 0px, 0px); box-sizing: border-box;">
+							<ul class="slider-list"
+								style="transform: translate3d(0px, 0px, 0px); position: relative; display: block; margin: 0px; padding: 0px; height: 100px; width: 0px; cursor: inherit; box-sizing: border-box;"></ul>
+						</div>
+						<style type="text/css">
+							.slider-slide>img {
+								width: 100%;
+								display: block;
+							}
+							</style>
+					</div>
+				</div>
+				<div
+					class="src-pages-inviteFriend__bigSlogen--1hGOPQ src-pages-inviteFriend__hasCampaign--3ZEujK">
+					<div>
+						<h2
+							style="font-weight: 800; padding-top: 60px;font-size: 30px; margin-bottom: 0px; text-shadow: rgb(174, 0, 23) 0px 10px 20px;">邀请好友</h2>
+						<h2
+							style="font-weight: 800;margin-top: 25px; font-size: 30px; text-shadow: rgb(174, 0, 23) 0px 10px 20px;">3元奖励+30%提成收益</h2>
+						<h2
+							style="font-size: 16px; margin-top: 25px; color: rgb(255, 255, 255); font-weight: normal;">收益无上限，邀请越多赚的越多</h2>
+						<!-- <h2
+							style="font-size: 16px; margin-top: 30px; color: rgb(255, 255, 255); font-weight: normal;">无上限，邀请越多赚的越多</h2> -->
+					</div>
+				</div>
+
+				<!-- 
+				<div
+					class="src-pages-inviteFriend__inviteCodeWrap--2qJtf7 src-pages-inviteFriend__hasCampaign--3ZEujK">
+					<div>
+						<h1>
+							我的邀请码 <span>点击可复制</span>
+						</h1>
+						<div class="src-pages-inviteFriend__inviteCode--R2ZrEp">
+							<span>--- ---</span>
+						</div>
+					</div>
+					<div class="src-pages-inviteFriend__howToUse--3XaUu_">
+						如何使用<i class="iconfont icon-help"></i>
+					</div>
+				</div>
+				
+				 
+				<div
+					class="src-components-inviteFriend-InviteProcess__InviteProcess--1ef4nD src-pages-inviteFriend__inviteProcess--rUoABC">
+					<h1>
+						当前我已成功邀请<span>0</span>人<a>查看明细</a>
+					</h1>
+					<ul
+						class="src-components-inviteFriend-InviteProcess__processWrap--1fAAK6">
+						<li
+							class="src-components-inviteFriend-InviteProcess__processItem--2HwNn4 "><div
+								class="src-components-inviteFriend-InviteProcess__title--2KuGrx">邀请人数</div>
+							<div
+								class="src-components-inviteFriend-InviteProcess__node--3MJdCG"></div>
+							<div
+								class="src-components-inviteFriend-InviteProcess__desc--3ZQibv">奖励金额</div></li>
+						<li
+							class="src-components-inviteFriend-InviteProcess__processItem--2HwNn4 "><div
+								class="src-components-inviteFriend-InviteProcess__title--2KuGrx">2</div>
+							<div
+								class="src-components-inviteFriend-InviteProcess__node--3MJdCG"></div>
+							<div
+								class="src-components-inviteFriend-InviteProcess__desc--3ZQibv">3元</div></li>
+						<li
+							class="src-components-inviteFriend-InviteProcess__processItem--2HwNn4 "><div
+								class="src-components-inviteFriend-InviteProcess__title--2KuGrx">5</div>
+							<div
+								class="src-components-inviteFriend-InviteProcess__node--3MJdCG"></div>
+							<div
+								class="src-components-inviteFriend-InviteProcess__desc--3ZQibv">10元</div></li>
+						<li
+							class="src-components-inviteFriend-InviteProcess__processItem--2HwNn4 "><div
+								class="src-components-inviteFriend-InviteProcess__title--2KuGrx">10</div>
+							<div
+								class="src-components-inviteFriend-InviteProcess__node--3MJdCG"></div>
+							<div
+								class="src-components-inviteFriend-InviteProcess__desc--3ZQibv">30元</div></li>
+					</ul>
+					<h1>已经超过10人啦</h1>
+				</div>
+				-->
+	<!-- 
+				<ul
+					class="src-components-inviteFriend-ShareList__ShareList--3_9wBb src-pages-inviteFriend__shareList--3h_Am7">
+					<li><span class="am-badge"><a
+							href="wl://contacts?hascontacts=1"><img
+								src="imgs/icon_message-1DMEXf.png" alt="">
+								<p>短信</p></a><sup class="am-badge-text">推荐</sup></span></li>
+					<li><span class="am-badge"><a
+							href="wl://coin/share?type=wx&amp;yue=------"><img
+								src="imgs/icon_share_weixin-2okrwn.png" alt="">
+								<p>微信</p></a><sup class="am-badge-text">推荐</sup></span></li>
+					<li><a href="wl://coin/share?type=pyq&amp;yue=------"><img
+							src="imgs/icon_share_pengyouquan-2nnlXV.png" alt="">
+							<p>朋友圈</p></a></li>
+					<li><a href="wl://coin/share?type=qzone&amp;yue=------"><img
+							src="imgs/icon_share_qzone-B-Fbl-.png" alt="">
+							<p>QQ空间</p></a></li>
+					<li><a href="wl://coin/share?type=qq&amp;yue=------"><img
+							src="imgs/icon_share_qq-2LI6AW.png" alt="">
+							<p>QQ好友</p></a></li>
+					<li><a href="wl://coin/share?type=f2f&amp;yue=------"><img
+							src="imgs/icon_share_faceqr-3kw8X1.png" alt="">
+							<p>面对面扫码</p></a></li>
+				</ul> -->
+
+				<!-- 添加邀请码 -->
+				<div class="invitation-code box-sizing">
+					<div class="nvitation-code-content box-sizing">
+						<div class="code-info">
+							我的邀请码
+						</div>
+						<div class="copy-code clearfix">
+							<p style="font-size: 24px;font-weight: 900;width: 9.25rem;float: left;line-height: 30px;">688 88A</p>
+							<div class="copyBtn copy-btn" data-clipboard-text="688 88A">复制邀请码</div>
+
+						</div>
+					</div>
+					<div class="invitation-info">
+						<img src="imgs/31531141042_.pic_03.png" alt="邀请说明">
+						<span >邀请码说明</span>
+					</div>
+				</div>
+				<div style="width: 100%;height: 10px;background-color: #f3f3f3;">
+					
+				</div>
+				<div class="am-tabs am-tabs-horizontal am-tabs-top">
+					<div class="am-tabs-tab-bar-wrap">
+						<div
+							class="am-tabs-default-bar am-tabs-default-bar-animated am-tabs-default-bar-top"
+							style="background-color: rgb(255, 255, 255);">
+							<div class="am-tabs-default-bar-content"
+								style="touch-action: pan-y;">
+								<div
+									class="am-tabs-default-bar-tab am-tabs-default-bar-tab-active"
+									style="color: red; width: 50%;" id="reawrd">奖励说明</div>
+								
+								<div class="am-tabs-default-bar-tab" style="width: 50%;" id="myfriend">我的好友</div> 
+								<div class="am-tabs-default-bar-underline" id="linestyle"
+									style="width: 12%; left: 0%; border-color: red; transform: translate(160%, 0px);"></div>
+							</div>
+						</div>
+					</div>
+					<div class="am-tabs-content-wrap am-tabs-content-wrap-animated"
+						style="touch-action: pan-x pan-y; transform: translate3d(0%, 0px, 1px);" >
+						<div class="am-tabs-pane-wrap am-tabs-pane-wrap-active"  id="tab1" >
+							<div
+								class="src-components-inviteFriend-RewardNote__RewardNote--PuMgmr ">
+								<!-- 
+								<div>
+									<h1>活动说明</h1>
+									<ul>
+										<li>1. 被邀请的好友须绑定微信账户</li>
+										<li>2. 被邀请的好友须为首次注册使用花生头条的用户</li>
+										<li>3. 每位好友阅读文章获得300金币后，即为达标</li>
+										<li>4. 每人至多可获30元额外奖励</li>
+										<li>5. 本奖励不与正常收徒奖励冲突</li>
+										<li>6. 奖励于活动结束后，以金币形式发放</li>
+									</ul>
+									<p class="src-components-inviteFriend-RewardNote__note--2kqjgk">
+										注：<br>以上规则仅限活动期内有效（活动时间：5月4日14:00-5月9日24:00）<br>活动最终解释权归花生头条所有<br>
+									</p>
+								</div>
+								 -->
+								<h1>邀请的好处</h1>
+								<h2>【邀请收益】</h2>
+								<p>
+									邀请好友下载注册“花生头条”APP，即可获得<span>30000金币</span>。首次邀请还可额外获得<span>10000金币</span>奖励。
+								</p>
+								<h2>【提成收益】</h2>
+								<p>
+									好友每获得<span>100金币</span>的阅读收益，您将额外获得<span>30金币</span>；
+								</p>
+								<p>
+									好友完成当天搜索任务，您还可获得金币奖励：
+								</p>
+									<div class="src-components-inviteFriend-RewardNote__rule---h8eC0">
+									<ul>
+										<li>好友当天搜索次数</li>
+										<li>10次</li>
+										<li>20次</li>
+										<li>30次</li>
+									</ul>
+									<ul>
+										<li>您可获得的奖励金币</li>
+										<li>100</li>
+										<li>150</li>
+										<li>250</li>
+									</ul>
+								</div>
+								<h2>【邀请奖励规则】</h2>
+								<div class="src-components-inviteFriend-RewardNote__rule---h8eC0">
+									<ul>
+										<li>金币发放次数</li>
+										<li>第一次</li>
+										<li>第二次</li>
+										<li>第三次</li>
+										<li>第四次</li>
+										<li>第五次</li>
+										<li>第六次</li>
+										<li>第七次</li>
+									</ul>
+									<ul>
+										<li>奖励金币数</li>
+										<li>5000</li>
+										<li>4000</li>
+										<li>3000</li>
+										<li>3000</li>
+										<li>3000</li>
+										<li>4000</li>
+										<li>5000</li>
+									</ul>
+									<div
+										class="src-components-inviteFriend-RewardNote__ruleInfo--1FsZbH">
+										<p>
+											每邀请一位好友即可获得奖励<span>【30000金币】</span>。其中，好友在您的邀请页面填写手机号并注册，您可立即获得<span>3000</span>金币。剩余的<span>27000</span>金币分7天发放（从邀请第二天起），当日您的好友获得<span>200</span>金币阅读收益时，您可获得金币奖励，每位好友每天发放一次。若您有作弊嫌疑，花生有权取消您的奖励资格。
+										</p>
+									</div>
+									<!-- <ul>
+										<li>次数</li>
+										<li>第一次</li>
+										<li>第二次</li>
+										<li>第三次</li>
+										<li>第四次</li>
+										<li>第五次</li>
+										<li>第六次</li>
+										<li>第七次</li>
+									</ul>
+									<ul>
+										<li>奖励金币</li>
+										<li>500</li>
+										<li>400</li>
+										<li>300</li>
+										<li>300</li>
+										<li>300</li>
+										<li>400</li>
+										<li>500</li>
+									</ul>
+									<div
+										class="src-components-inviteFriend-RewardNote__ruleInfo--1FsZbH">
+										<p>
+											每成功邀请1个好友（已下载使用花生头条）后，您可获得<span>2700金币</span>。该奖励将分7次发放（自邀请成功的<span>第二天</span>起），只需您的好友单日获得<span>200金币</span>以上的<span>阅读</span>奖励，您即可得到1次奖励。每位好友每天至多发放<span>1次</span>，该奖励自邀请成功之日起<span>30日</span>内有效。
+										</p>
+										<p>如有作弊嫌疑，将不会获得金币奖励。</p>
+									</div> -->
+								</div>
+							</div>
+						</div>
+						<div class="am-tabs-pane-wrap am-tabs-pane-wrap-inactive" id="tab2" >
+							<div 
+								class="src-components-inviteFriend-MyFriends__MyFriends--1BnKpt ">
+								<div class="src-components-inviteFriend-MyFriends__activitySuccessInvite--2LXogp">
+								   
+										
+									<div id="div1">
+								  	<!--<h1>活动邀请的好友</h1>
+										 <table>
+										<thead>
+										<tr>
+										<th align='left'>昵称</th>
+										<th>今日贡献</th>
+										<th>累计贡献</th>
+										<td>操作</td>
+										</tr>
+										<tbody>
+										<tr>
+										<td style="text-align:left">昵称</td>
+										<td>今日贡献</td>
+										<td>累计贡献</td>
+										<th><div style="width: 100px;height: 30px"><img style="width: 100px;height: 30px;margin-left: 20px" alt="" src="./imgs/tixing.png"></div></th>
+										</tr>
+										<tr>
+										<td style="text-align:left" >昵称</td>
+										<td>今日贡献</td>
+										<td>累计贡献</td>
+										<th><div class="tixingtankuang" style="width: 100px;height: 30px"><a href = "javascript:void(0)" onclick = "tixing()"><img style="width: 100px;height: 30px;margin-left: 20px" alt="" src="./imgs/tixing.png"></a></div></th>
+										</tr>
+										</tbody>
+										</thead>
+										</table>    -->
+									</div>
+									
+									
+									<div id="div2">
+									<h1>邀请小技巧</h1>
+								<h3>邀请成功率提升200%</h3>
+								<p>邀请您的家人、朋友、同学同事成功率最高分享到3个以上微信群/QQ群，成功邀请的几率提升200%
+								</p>
+									</div>
+									
+									<div id="div3">
+									 
+								</div>
+								<br/><br/><br/><br/><br/>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="src-pages-inviteFriend__inputCodeAndInviteWrap--3QDV8N" id="buttom">
+					<a role="button"
+						class="am-button src-pages-inviteFriend__showShareModalBtn--3qeqqA am-button-primary am-button-inline"
+						aria-disabled="false" id="nowallowfriend" href="wl://allshare?hascontacts=1"><span>立刻邀请好友</span></a>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/vendor.bundle.js"></script>
+
+		<script src="js/polyfill.bundle.js"></script>
+		<div id="am-modal-container-1528940666659">
+			<div>
+			
+				<div class="am-modal-mask"></div>
+				<div class="am-modal-wrap " role="dialog" >
+					<div role="document" class="am-modal am-modal-transparent"  style="background-image: url('imgs/abg.png');">
+						<div class="am-modal-content">
+							<div class="am-modal-body">
+								<div class="src-components-HowToInvite-HowToInvite__HowToInvite--1I8a9F">
+								     <div class="leftclose"  ></div>
+									 <span class="close"  id="closediv"></span>
+									<h2>提醒好友</h2>
+									<p>马上发信息提醒好友</p><p></p>
+									<img src="imgs/bg.png" alt="">
+									<ul
+										class="src-components-inviteFriend-ShareList__ShareList--3_9wBb src-pages-inviteFriend__shareList--3h_Am7">
+										<li><span class="am-badge"><a
+												href="wl://coin/share?type=wx&amp;yue=------"><img
+													src="imgs/icon_share_weixin-2okrwn.png" alt="">
+													<p>微信好友</p></a></span></li>
+										<li><a href="wl://coin/share?type=qq&amp;yue=------"><img
+												src="imgs/icon_share_qq-2LI6AW.png" alt="">
+												<p>QQ好友</p></a></li>
+									</ul>
+								</div>
+							</div>
+							 <!-- <div class="am-modal-footer">
+								<div class="am-modal-button-group-v am-modal-button-group-normal"
+									role="group">
+									<a class="am-modal-button" role="button">知道了</a>
+								</div>
+							</div>  -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var clipboard = new Clipboard('.copy-btn').on('success', function(e) {
+			        var e = e || window.event;
+			        $('.copy-success').css({'display':'flex'});
+			        setTimeout(function(){
+			        	$('.copy-success').css({'display':'none'});
+			        },1200)
+			    }).on('error', function(e) {
+			    	alert('请选择“拷贝”进行复制!')
+			    });
+			})
+			$('.modal-btn').on( 'click', function(){
+				
+				$('.invitation-modal').css({'display':'none'});
+			})
+			$('.invitation-info').on( 'click', function(){
+				$('.invitation-modal').css({'display':'flex'});
+			})
+			 $('#closediv') .on( 'click',
+						function() {
+				 $('#am-modal-container-1528940666659').hide()	
+			})
+			
+			function tixing(){
+				 $("#am-modal-container-1528940666659").show();
+				 }
+		</script>
+	</body>
+	</html>

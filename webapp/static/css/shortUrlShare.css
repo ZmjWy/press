@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+* {
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+html {
+  font-size: 16px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+input {
+  cursor: pointer;
+  -moz-user-select: text;
+   -ms-user-select: text;
+       user-select: text;
+  -webkit-user-select: text;
+}
+input[type=text] {
+  border: solid 1px #4dade0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  padding: 5px 10px;
+}
+button {
+  background: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#root {
+  width: 100%;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ {
+  height: 100%;
+  background-image: url(imgs/bg-3Cqzbp.png);
+  background-size: cover;
+  padding: 32px 32px 52px 32px;
+  color: #fff;
+  text-align: center;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ h1 {
+  font-size: 20.8px;
+  margin: 0 0 8px 0;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ h3 {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ h2 {
+  font-size: 20.8px;
+  margin: 48px 0 22.4px 0;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ h2 span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ .src-pages-shortUrlShare__titleImg--1kDXkQ {
+  width: 100%;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ .src-pages-shortUrlShare__inviteCode--lxstzR {
+  height: 164px;
+  background-image: url(imgs/invite-1wO0-l.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ .src-pages-shortUrlShare__inviteCode--lxstzR span {
+  color: #9D3A07;
+  font-size: 53.92px;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ .src-pages-shortUrlShare__inviteCode--lxstzR .src-pages-shortUrlShare__howToInvite--1v-gJo {
+  width: 96px;
+  height: 32px;
+  position: absolute;
+  bottom: 8px;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ .src-pages-shortUrlShare__btn--3hqXJL {
+  width: 299.2px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 19.2px;
+  color: #9D3A07;
+  background-color: #F0CD31;
+  margin-top: 36px;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ h4 {
+  margin-top: 19.2px;
+  font-size: 16px;
+}
+.src-pages-shortUrlShare__shortUrlShare--dQnbNQ h4 span {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=shortUrlShare.css.map*/

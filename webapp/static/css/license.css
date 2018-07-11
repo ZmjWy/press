@@ -1,0 +1,38 @@
+.src-pages-license__license--16eRZy {
+  padding: 16px;
+}
+.src-pages-license__license--16eRZy h1 {
+  color: orange;
+  font-size: 16px;
+  font-weight: normal;
+  border: none;
+  border-bottom: solid 1px orange;
+  padding-bottom: 16px;
+}
+.src-pages-license__license--16eRZy h2 {
+  color: orange;
+  font-size: 14.4px;
+  font-weight: normal;
+  border-bottom: solid 1px orange;
+  padding-bottom: 16px;
+}
+.src-pages-license__license--16eRZy p {
+  font-size: 13.6px;
+  text-indent: 32px;
+}
+.src-pages-license__license--16eRZy table {
+  font-size: 13.6px;
+  border-collapse: collapse;
+  border-color: #dfdfdf;
+}
+.src-pages-license__license--16eRZy table th {
+  text-align: left;
+  padding: 8px;
+  border: solid 1px #ccc;
+}
+.src-pages-license__license--16eRZy table td {
+  padding: 8px;
+  border: solid 1px #ccc;
+}
+
+/*# sourceMappingURL=license.css.map*/

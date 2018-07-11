@@ -1,0 +1,179 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+* {
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+html {
+  font-size: 16px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+input {
+  cursor: pointer;
+  -moz-user-select: text;
+   -ms-user-select: text;
+       user-select: text;
+  -webkit-user-select: text;
+}
+input[type=text] {
+  border: solid 1px #4dade0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  padding: 5px 10px;
+}
+button {
+  background: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#root {
+  width: 100%;
+}
+.src-pages-msgCallBack2__pr--3quqvb {
+  position: relative;
+}
+.src-pages-msgCallBack2__fs22--1l8-kJ {
+  font-size: 22px;
+}
+.src-pages-msgCallBack2__fs15--ntDEmr {
+  font-size: 15px;
+}
+.src-pages-msgCallBack2__fs17--1MgWU2 {
+  font-size: 17px;
+}
+.src-pages-msgCallBack2__tc--1dyRg0 {
+  text-align: center;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__bg--2uRFzb {
+  width: 100%;
+  display: block;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__btns--nJ4pHn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  bottom: 6%;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__btn--3A6FJm {
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+  width: 135px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__btn1--11AMok {
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+  width: 135px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  background: #f2d957;
+  color: #c9342c;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__btn2--IASXPh {
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+  width: 135px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  background: #f15c52;
+  color: #fff5af;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__list--1n-s3V {
+  width: 90%;
+  box-sizing: border-box;
+  margin: 20px auto 10px;
+  border-radius: 10px;
+  padding: 0 10px 40px 10px;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__item--18LjRR {
+  border-bottom: 1px solid #f4d5c7;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@-webkit-keyframes src-pages-msgCallBack2__trans1--kO9NCc {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 41px;
+  }
+}
+@keyframes src-pages-msgCallBack2__trans1--kO9NCc {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 41px;
+  }
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__itemFirst--2IEtSK {
+  border-bottom: 1px solid #f4d5c7;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-animation: src-pages-msgCallBack2__trans1--kO9NCc 500ms ease-in-out;
+          animation: src-pages-msgCallBack2__trans1--kO9NCc 500ms ease-in-out;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__itemLeft--1aEcSD {
+  display: flex;
+  align-items: center;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__itemLeft--1aEcSD img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__itemLeft--1aEcSD div {
+  font-size: 15px;
+  color: #000;
+  margin-left: 5px;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__blue--204UOv {
+  color: #127ef8;
+}
+.src-pages-msgCallBack2__msgCallBack--3FIV5w .src-pages-msgCallBack2__green--3IC5ni {
+  color: #16c74c;
+}
+
+/*# sourceMappingURL=msgCallBack2.css.map*/

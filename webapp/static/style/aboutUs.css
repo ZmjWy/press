@@ -1,0 +1,43 @@
+.aboutUs{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.head{
+    margin-top: 1.70rem;
+}
+.logo{
+    width: 2rem;
+    height: 2rem;
+    border-radius: .36rem;
+}
+.com1{
+    font-size: .34rem;
+    color: #333;
+    line-height: .4rem;
+}
+.com2{
+    font-size: .28rem;
+    color: #979797;
+    line-height: .4rem;    
+}
+
+.head-title{
+    margin: .31rem auto .09rem;
+}
+
+.bot{
+    width: 100%;
+    position: absolute;
+    bottom: 1.13rem;
+    text-align: center;
+}
+
+.contact{
+    line-height: .56rem;
+    overflow: hidden;
+    margin-bottom: .35rem;
+    font-size: .3rem;
+}

@@ -1,0 +1,26 @@
+body {
+    background: #ffffff;
+}
+
+.agreement-box {
+    background: #ffffff;
+    padding: 0 .2rem;
+}
+
+.agreement-title {
+    font-size: .32rem;
+    color: #333;
+    line-height: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.content {
+    font-size: .26rem;
+    line-height: .56rem;
+    color: #555;
+    padding-bottom: .4rem;
+}
+.content-one{
+    margin-top: .3rem;
+}

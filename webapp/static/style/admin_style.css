@@ -1,0 +1,167 @@
+/*默认界面css*/
+html {
+	scrollbar-base-color: #FFFFFF; 
+	scrollbar-dark-shadow-color: #E2F2FA; 
+	scrollbar-track-color: #FFFFFF; 
+	scrollbar-face-color: #FFFFFF; 
+	scrollbar-shadow-color: #E2F2FA; 
+	scrollbar-highlight-color: #E2F2FA; 
+	scrollbar-3d-light-color: #E2F2FA;
+}
+body {
+	background-color: #FFFFFF;
+}
+
+div {font-family:"宋体";font-size:12px;}
+p {font-family:"宋体";font-size:12px;}
+td {font-family:"宋体";font-size:12px; word-break:break-all;}
+thead th{background:#F4F7FD; color:#666666;border-bottom:1px solid #A7BBE4; border-right:1px solid #A7BBE4;font-family:"宋体";font-size:12px; word-break:break-all;}
+a.blue12:link {FONT-SIZE: 12px; font-family:"宋体";color: #0000ff; TEXT-DECORATION: none}
+a.blue12:hover {FONT-SIZE: 12px; font-family:"宋体";color: #ff8604; TEXT-DECORATION: none}
+a.blue12:visited {FONT-SIZE: 12px; font-family:"宋体";color: #0000ff; TEXT-DECORATION: none}
+
+a:link {FONT-SIZE: 12px; font-family:"宋体";color: #ff8604; TEXT-DECORATION: none}
+a:hover {FONT-SIZE: 12px; font-family:"宋体";color: #fd6001; TEXT-DECORATION: none}
+a:visited {FONT-SIZE: 12px; font-family:"宋体";color: #ff8604; TEXT-DECORATION: none}
+
+A.blue14:link {
+	FONT-SIZE: 14px; COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A.blue14:visited {
+	FONT-SIZE: 14px; COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A.blue14:hover {
+	FONT-SIZE: 14px; COLOR: #ff6600; TEXT-DECORATION: underline
+}
+
+A.Blue16Hei:link {
+	FONT-SIZE: 16px; COLOR: #0000ff; TEXT-DECORATION: none; FONT-FAMILY: "黑体"
+}
+A.Blue16Hei:visited {
+	FONT-SIZE: 16px; COLOR: #0000ff; TEXT-DECORATION: none; FONT-FAMILY: "黑体"
+}
+A.Blue16Hei:hover {
+	FONT-SIZE: 16px; COLOR: #ff6600; TEXT-DECORATION: none; FONT-FAMILY: "黑体"
+}
+
+.Blue16Hei {
+	FONT-SIZE: 16px; COLOR: blue; FONT-FAMILY: "黑体"
+}
+
+IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+
+table.tableCenter { font-size:12px; text-align:center; }
+table.tableRight { font-size:12px; text-align:right; }
+table.tableLeft { font-size:12px; text-align:left; }
+td.alignCenter { font-size:12px; text-align:center;word-break:break-all; }
+td.alignRight{ text-align:right; }
+td.alignLeft{ text-align:left; }
+
+/*白色色文字*/
+.white{
+color:#fe9d04}
+/*默认文本框*/
+INPUT{
+	BACKGROUND-COLOR: #FFFFFF ; BORDER-BOTTOM-COLOR: #333333; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-COLOR: #333333; BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-COLOR: #333333; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-COLOR: #333333; BORDER-TOP-WIDTH: 0px; COLOR: #000000; FONT-SIZE: 10pt
+}
+
+INPUT.LABEL_LIKE{
+	BACKGROUND-COLOR: #FFFFFF ; BORDER-BOTTOM-COLOR: #333333; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-COLOR: #333333; BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-COLOR: #333333; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-COLOR: #333333; BORDER-TOP-WIDTH: 0px; COLOR: #FF0000; FONT-SIZE: 10pt
+}
+
+/*按钮*/
+.BUTTON{
+BORDER-TOP: #040404 1px solid;BORDER-left: #040404 1px solid; BORDER-right: #040404 1px solid;FONT-SIZE: 12px; BORDER-BOTTOM: #040404 1px solid;  HEIGHT: 18px; padding-top:1px;color:#000000;
+font-size: 12px;	color: #FFFFFF;	background-color:#5483E6;font-size: 12px;
+}
+
+.button_search{
+	width:82px;height:30px;margin:0 0 -3px 0;background: url(../css/images/bg.gif) -1px -1px no-repeat;border:0;cursor:pointer;
+}
+
+.button_add{
+	width:82px;height:30px;margin:10px 0;background: url(../css/images/bg.gif) -100px -1px no-repeat;border:0;cursor:pointer;
+}
+
+.btn {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #ffffff 1px solid; COLOR: #ffffff; LINE-HEIGHT: 16px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 18px; BACKGROUND-COLOR: #414141
+}
+
+/*select的css*/
+.select{
+font-size:12px; height:15px
+}
+
+.aticle{
+line-height: 20px;text-align:left;
+word-break:break-all;
+}
+.titleChar18{
+font-size:18px; color:#000000;font-family:"黑体";
+}
+.titleBlue18{
+font-size:18px; color:blue;font-family:"黑体";text-align:left
+}
+.titleBlue14{
+font-size:14px; color:blue;font-family:"宋体";text-align:left
+}
+.titleRed18{
+font-size:18px; color:red;font-family:"黑体";text-align:left
+}
+.Red14{
+	font-size:14px; color:red; text-align:left
+}	
+.titleChar14{
+font-size:14px; color:#000000;
+}
+.mainTB{
+  width:100%;height:100%;
+}
+.fontred{
+  color:red;
+}
+
+.rightFont {
+	FONT-SIZE: 12px; COLOR: green;
+}
+
+.White20Hei {
+	FONT-SIZE: 20px; COLOR: #ffffff; LINE-HEIGHT: 24px; FONT-FAMILY: "黑体"
+}
+
+.MenuBlue16Hei {
+	FONT-SIZE: 16px; COLOR: #02529d; FONT-FAMILY: "黑体"
+}
+
+.MenuBlack16Hei {
+	FONT-SIZE: 16px; COLOR: #000000; FONT-FAMILY: "黑体"
+}
+
+.Blue12 {
+	FONT-SIZE: 12px; COLOR: #0000ff; LINE-HEIGHT: 16px
+}
+
+.Blue14 {
+	FONT-SIZE: 16px; font-weight:bold;  COLOR: #000; LINE-HEIGHT: 18px
+}
+
+.White14 {
+	FONT-SIZE: 14px; COLOR: #ffffff; LINE-HEIGHT: 18px
+}
+.White14 A:link {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.White14 A:visited {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.White14 A:hover {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.Black14 {
+	FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 20px
+}
+.tiny {
+	FONT-SIZE: 6px; COLOR: #ffffff; LINE-HEIGHT: 6px
+}
